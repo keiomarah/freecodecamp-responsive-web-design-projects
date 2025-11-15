@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="device=device-width, initial-scale=1.0">
+    <title>Turtle Dove Co.'s Wedding Planning Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Turtle Dove Co.</h1>
+    <p id="description">Thank you for choosing to participate in Turtle Dove Co.'s wedding planning survey. 
+        The information we collect better equipes us to bring you the day of your dreams!</p>
+    <form id="survey-form">
+        <fieldset>
+            <label class="format-label" id="name-label" for="name">Enter name:
+                <input id="name" name="first-name" type="text" placeholder="Enter name" required/>
+            </label>
+            <label class="format-label" id="email-label" for="email">Enter email:
+                <input id="email" name="email" type="email" placeholder="johndoe@email.com" required/>
+            </label>
+            <label class="format-label" id="number-label" for="number">Age:
+                <input id="number" name="age" type="number" min="18" max="120" placeholder="18" required/>
+            </label>
+            <label class="format-label"for="dropdown">How much in advance would you begin planning?
+                <select id="dropdown" name="months-planning">
+                    <option value="">Select an option</option>
+                    <option value="1">1 month</option>
+                    <option value="3">3 months</option>
+                    <option value="5">5 months</option>
+                    <option value="6">6 months</option>
+                    <option value="12">1 year</option>
+                    <option value="18">1.5 years</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset><legend>How large is your ideal wedding?</legend>
+            <label for="micro">
+                <input class="inline format-list" type="radio" name="wedding-size" id="micro" value="micro" checked /> Micro (under 30 guests)
+            </label>
+            <label for="small">
+                <input class="inline" type="radio" name="wedding-size" id="small" value="small" /> Small (30-50 guests)
+            </label>
+            <label for="medium">
+                <input class="inline" type="radio" name="wedding-size" id="medium" value="medium"/> Medium (50 - 150 guests)
+            </label>
+            <label for="large">
+                <input class="inline" type="radio" name="wedding-size" id="large" value="large" /> Large (150-300)
+            </label>
+            <label for="grande">
+                <input class="inline"type="radio" name="wedding-size" id="grande" value="grande" /> Grande (300+ guests)
+            </label>
+        </fieldset>
+        <fieldset><legend>Ideal Wedding Venue (you can choose more than one)</legend>
+            <label for="church"><input class="inline format-list" type="checkbox" id="church" name="church" value="church" />Church</label>
+            <label><input class="inline" type="checkbox" name="venue-type" value="beach"/>Beach</label>
+            <label><input class="inline" type="checkbox" name="venue-type" value="barnhouse"/>Barnhouse</label>
+            <label><input class="inline" type="checkbox" name="venue-type" value="manor-house"/>Manor House</label>
+            <label><input class="inline" type="checkbox" name="venue-type" value="backyard"/>Backyard</label>
+            <label><input class="inline" type="checkbox" name="venue-type" value="woods"/>Woods</label>
+        </fieldset>
+        <fieldset>
+            <label>Ideal cake flavour?
+                <select id="dropdown-1" name="cake-flavour">
+                    <option value="">Select an option</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="red=velvet">Red Velvet</option>
+                    <option value="carrot">Carrot</option>
+                    <option value="lemon-creme">Lemon Crème</option>
+                </select>
+            </label>
+            <label for="wedding-feel">What is the overall feeling of your ideal wedding? 
+                <textarea id="wedding-feel" name="wedding-feel" rows="5" placeholder="Luxurious, simple, intimate..."></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
