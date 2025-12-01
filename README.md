@@ -4,7 +4,9 @@ This repository contains all of my certification projects for the freeCodeCamp R
 
 ## Completed projects
 
-    Survey Form - First certification projects that demonstrations an understanding of the fundamentals of HTML and CSS. 
+    Survey Form - First certification project that demonstrations an understanding of basic of HTML and CSS. 
+
+    Tribute Page - Second certification project demonstrating fundamental HTML and CSS skills as well as accessibility. 
 
 ## Notes
 
