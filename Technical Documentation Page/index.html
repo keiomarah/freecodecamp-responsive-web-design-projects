@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>Python Documentation</h1></header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+            <li><a class="nav-link" href="#Output">Output</a></li>
+            <li><a class="nav-link" href="#Comments">Comments</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Casting">Casting</a></li>
+            <li><a class="nav-link" href="#Strings">Strings</a></li>
+            <li><a class="nav-link" href="#Booleans">Booleans</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#Decisions">Decisions</a></li>
+            <li><a class="nav-link" href="#Iteration">Iteration</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section" aria-labelledby="introduction-heading">
+            <header><h2 id="introduction-heading">Introduction</h2></header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. 
+                It is used for: web development (server-side), software development, mathematics, and system scripting. 
+                The language works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc). It has a simple syntax similar to the English 
+                language and allows developers to write programs with fewer lines than some other programming languages. Python runs on an 
+                interpreter system, meaning the code cna be executed as soon as it is written. This means that prototyping can be 
+                very quick. Python can be treated in a procedural way, an object-oriented way or a functional way.</p>
+                <p>The most recent major version of Python is <span class="links"><a href="https://www.python.org/downloads/" target="blank">Python 3</a></span>, which we shall be using 
+                in this tutorial.</p>
+        </section>
+        <section id="Syntax" class="main-section" aria-labelledby="syntax-heading">
+            <header><h2 id="syntax-heading">Syntax</h2></header>
+            <p>An important aspect of Python syntax is indentation. Indentation refers to the spaces at the beginning of a code line. Where in other 
+                programming languages the indentation in code is for readability only, the indentation in Python is very important. Python 
+                uses indentation to indicate a block of code.</p>
+            <pre><code>
+if 5 > 2:
+    print("Five is greater than two!")  
+            </code></pre>
+        </section>
+        <section id="Output" class="main-section" aria-labelledby="output-heading">
+            <header><h2 id="output-heading">Output</h2></header>
+            <p>
+                You can use print() function to display text or output values. Text in Python must be inside quotes. You can
+                use either " " double quotes or ' ' single quotes.
+            </p>
+            <pre>
+                <code>
+x = 25
+    print("Hello World!") #Hello World!
+    print(x) #25
+                </code>
+            </pre>
+            <p>If you forget to put the text inside quotes, Python will give an error.</p>
+            <p>You can combine text and numbers in one output by separating them with a comma.</p>
+            <pre>
+                <code>
+print("I am", 35, "years old.") #I am 35 years old.
+                </code>
+            </pre>
+        </section>
+        <section id="Comments" class="main-section" aria-labelledby="comments-heading">
+            <header><h2 id="comments-heading">Comments</h2></header>
+            <p>Comments can be used to explain Python code and can be used to make the code more readable.
+                Comments can also be used to prevent execution when testing code.</p>
+                <p>
+                    Single line comments start with a #. Python does not really have a syntax for 
+                    multiline comments. You can use a multiline string since Python ignores string literals that are not assigned to
+                    a variable.
+                </p>
+                <pre>
+                    <code>
+#This is a comment
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
+                    </code>
+                </pre>
+        </section>
+        <section id="Variables" class="main-section" aria-labelledby="variables-heading">
+            <header><h2 id="variables-heading">Variables</h2></header>
+            <p>
+                Variables are containers for storing data values. Python has no command for declaring a variable. 
+                A variable is created the moment you first assign a value to it. Variables do not need to be declared 
+                with any particular type, and can even change type after they have been set.
+            </p>
+            <pre>
+                <code>
+x = 5
+y = "John"
+print(x)
+print(y)
+                </code>
+            </pre>
+            <p>Variable names are case sensitive.</p>
+        </section>
+        <section id="Data_Types" class="main-section" aria-labelledby="data-types-heading">
+            <header><h2 id="data-types-heading">Data Types</h2></header>
+            <p>
+                In programming, data type is an important concept. Variables can store 
+                data of different types, and different types can do different things. 
+                Python has the following data types built-in by default, in these categories.
+            </p>
+            <div class="table-wrap">
+                <table>
+                    <tr>
+                        <th>Numeric types:</th>
+                        <td class="data-grey">int, float, complex</td>
+                    </tr>
+                    <tr>
+                        <th class="data-grey">Sequence types:</th>
+                        <td>list, tuple, range</td>
+                    </tr>
+                    <tr>
+                        <th>Mapping type:</th>
+                        <td class="data-grey">dict</td>
+                    </tr>
+                    <tr>
+                        <th class="data-grey">Set types:</th>
+                        <td>set, frozenset</td>
+                    </tr>
+                    <tr>
+                        <th>Boolean type:</th>
+                        <td class="data-grey">bool</td>
+                    </tr>
+                    <tr>
+                        <th class="data-grey">Binary types:</th>
+                        <td>bytes, bytearray, memoryview</td>
+                    </tr>
+                    <tr>
+                        <th>None type:</th>
+                        <td class="data-grey">NoneType</td>
+                    </tr>
+                </table>
+            </div>
+            <p>You can get the data type of any object by using the type() function.</p>
+        </section>
+        <section id="Casting" class="main-section" aria-labelledby="casting-heading">
+            <header><h2 id="casting-heading">Casting</h2></header>
+            <p>
+                There may be times when you want to specify a type on to a variable. This can be done with 
+                casting. Python is an object-orientated language, and as such it uses classes to define data types, 
+                including its primitive types.
+            </p>
+            <p>Casting in Python is therefore done using constructor functions:</p>
+            <ul>
+                <li>
+                    int() - constructs an integer number from an integer literal, a float 
+                    literal (by removing all decimals), or a string literal (providing the string represents a whole number)
+                </li>
+                <li>
+                    float() - constructs a float number from an integer literal, a float literal or a string literal 
+                    (providing the string represents a float or an integer)
+                </li>
+                <li>
+                    str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+                </li>
+            </ul>
+        </section>
+        <section id="Strings" class="main-section" aria-labelledby="strings-heading">
+            <header><h2 id="strings-heading">Strings</h2></header>
+            <p>
+                Like many other popular programming languages, strings in Python are arrays of unicode characters. 
+                However, Python does not have a character data type, a single character is simply a string with a length of 1.
+                Square brackets can be used to access elements of the string.
+            </p>
+            <pre>
+                <code>
+a = "Hello, World!"
+print(a[2]) #l
+                </code>
+            </pre>
+            <p>To get the length of a string, use the len() function.</p>
+            <p>To check if a certain phrase or character is present in a string, we can use the keyword in.</p>
+            <pre>
+                <code>
+txt = "The best things in life are free!"
+print("free" in txt) #True
+                </code>
+            </pre>
+            <p>To insert characters that are illegal in a string, use an escape character. An escape character 
+                is a backlash \ followed by the character you want to insert. An example of an illegal character is 
+                a double quote inside a string that is surrounded by double quotes.
+            </p>
+            <pre>
+                <code>
+txt = "We are the so-called \"Vikings\" from the north."
+                </code>
+            </pre>
+        </section>
+        <section id="Booleans" class="main-section" aria-labelledby="booleans-heading">
+            <header><h2 id="booleans-heading">Booleans</h2></header>
+            <p>
+                In programming you often need to know if an expression is True or False. 
+                You can evaluate any expression in Python, and get one of two answers, True or False.
+                When you compare two values, the expression is evaluated and Python returns the Boolean answer:
+            </p>
+            <pre>
+                <code>
+print(10 > 9) #True
+print(10 == 9) #False
+print(10 < 9) #False
+                </code>
+            </pre>
+        </section>
+        <section id="Operators" class="main-section" aria-labelledby="operators-heading">
+            <header><h2 id="operators-heading">Operators</h2></header>
+            <p>
+                Operators are used to perform operations on variables and values. Python divides the operators in the following
+                groups:
+            </p>
+            <ul>
+                <li>Arithmetic operators: +, -, *, /, etc</li>
+                <li>Assignment operators: =, +=, -=, *=, etc</li>
+                <li>Comparison operators: >, <, ==, <==, etc</li>
+                <li>Logical operators: and, or, not</li>
+                <li>Identity operators: is, is not</li>
+                <li>Membership operators: in, not in</li>
+                <li>Bitwise operators: &, |, ^, ~, etc</li>
+            </ul>
+        </section>
+        <section id="Arrays" class="main-section" aria-labelledby="arrays-heading">
+            <header><h2 id="arrays-heading">Arrays</h2></header>
+            <p>Python does not have built-in support for Arrays but has 4 data types used to store collections of data namely:</p>
+            <ul>
+                <li>Lists</li>
+                <li>Tuples</li>
+                <li>Sets</li>
+                <li>Dictionaries</li>
+            </ul>
+            <h3>List</h3>
+            <p>Lists are used to store multiple items in a single variable. Lists are created using square brackets. List items are ordered, changeable, and allow duplicate values.
+                List items are indexed, the first item has index [0], the second item [1], etc.
+            </p>
+            <pre>
+                <code>
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+                </code>
+            </pre>
+            <h3>Tuples</h3>
+            <p>
+                Tuples are used to store multiple items in a single variable. A tuple is a collection which is ordered and unchangeable.
+                Tuples are written with round brackets.
+            </p>
+            <pre>
+                <code>
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+                </code>
+            </pre>
+            <h3>Sets</h3>
+            <p>
+                Sets are used to store multiple items in a single variable. A set is a collection which is unordered, unchangeable*, and unindexed.
+                Sets are written with curly brackets.
+            </p>
+            <p>* Note: Set items are unchangeable, but you can remove items and add new items.</p>
+            <pre>
+                <code>
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+                </code>
+            </pre>
+            <h3>Dictionaries</h3>
+            <p>
+                Dictionaries are used to store data values in key:value pairs.
+                A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+                Dictionaries are written with curly brackets, and have keys and values:
+            </p>
+            <pre>
+                <code>
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+                </code>
+            </pre>
+        </section>
+        <section id="Decisions" class="main-section" aria-labelledby="decisions-heading">
+            <header><h2 id="decisions-heading">Decisions</h2></header>
+            <p>Python has two decision-making structures: If...Else statement and Match statement.</p>
+            <h3>Python If Statement</h3>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <ul>
+                <li>Equals: a == b</li>
+                <li>Not Equals: a != b</li>
+                <li>Less than: a < b</li>
+                <li>Less than or equal to: a <= b</li>
+                <Li>Greater than: a > b</Li>
+                <Li>Greater than or equal to: a >= b</Li>
+            </ul>
+            <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+            <pre>
+                <code>
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+                </code>
+            </pre>
+            <h3>Match Statement</h3>
+            <p>
+                The match statement is used to perform different actions based on different conditions. 
+                 of writing many if..else statements, you can use the match statement.
+                 The match statement selects one of many code blocks to be executed.
+            </p>
+            <pre>
+                <code>
+match expression:
+  case x:
+    code block
+  case y:
+    code block
+  case z:
+    code block
+                </code>
+            </pre>
+            <p>This is how it works:</p>
+            <uL>
+                <li>The match expression is evaluated once.</li>
+                <li>The value of the expression is compared with the values of each case.</li>
+                <li>If there is a match, the associated block of code is executed.</li>
+            </uL>
+        </section>
+        <section id="Iteration" class="main-section" aria-labelledby="iteration-heading">
+            <header><h2 id="iteration-heading">Iteration</h2></header>
+            <p>Python has two statements that support iteration: While loops and For loops.</p>
+            <h3>While Loops</h3>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+            <pre>
+                <code>
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+                </code>
+            </pre>
+            <h3>For Loops</h3>
+            <p>
+                A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+                This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+            </p>
+            <pre>
+                <code>
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+                </code>
+            </pre>
+        </section>
+        <section id="Functions" class="main-section" aria-labelledby="functions-heading">
+            <header><h2 id="functions-heading">Functions</h2></header>
+            <p>
+                A function is a block of code which only runs when it is called and can return data as a result. A function helps avoiding code repetition.
+            </p>
+            <p>
+                In Python, a function is defined using the def keyword, followed by a function name and parentheses:
+            </p>
+            <pre>
+                <code>
+def my_function():
+  print("Hello from a function")
+                </code>
+            </pre>
+            <p>This creates a function named my_function that prints "Hello from a function" when called.</p>
+            <P>To call a function, write its name followed by parentheses:</P>
+            <pre>
+                <code>
+def my_function():
+  print("Hello from a function")
+
+my_function()
+                </code>
+            </pre>
+        </section>
+        <section id="Reference" class="main-section" aria-labelledby="reference-heading">
+            <header><h2 id="reference-heading">Reference</h2></header>
+            <ul>
+                <li>All the documentation in this page is taken from <span class="links"><a href="https://www.w3schools.com/python/python_intro.asp" target="blank">W3 Schools</a></span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
