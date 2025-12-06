@@ -8,6 +8,8 @@ This repository contains all of my certification projects for the freeCodeCamp R
 
     Tribute Page - Second certification project demonstrating fundamental HTML and CSS skills as well as accessibility. 
 
+    Technical Documentation Page - Third certification project implementing intermediate CSS. 
+
 ## Notes
 
     All my projects are organised in folders. 
